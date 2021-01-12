@@ -1,7 +1,5 @@
 package com.space.model;
 
-import org.jetbrains.annotations.NotNull;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
@@ -12,7 +10,6 @@ public class Ship {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    @NotNull
     private Long id;
     @Column(name = "name")
     private String name;
